@@ -52,7 +52,7 @@ def post_review(data_dict):
         return response.json()
     except:
         print("Network exception occurred")
-
+        
 def add_review(request):
     if(request.user.is_anonymous == False):
         data = json.loads(request.body)
